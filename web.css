@@ -170,6 +170,10 @@ nav ul li a:hover {
   transition: opacity 0.3s ease;
 }
 
+.card:hover .card-image {
+  opacity: 0.3;
+}
+
 .card:hover #card-text {
   opacity: 1;
 }
