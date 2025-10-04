@@ -22,12 +22,12 @@ Web_producer 는 웹 표준 (HTML, CSS, JavaScript)을 활용하여 음악 프�
   - menu-icon hover 시 좌측으로 이동되었던 nav를 다시 옮겨 나타나게 하고 나타난 nav hover 시에도 유지
 
 
-```
-.menu-icon:hover+nav,
-nav:hover {
-  left: 0;
-}
-```
+    ```
+    .menu-icon:hover+nav,
+    nav:hover {
+      left: 0;
+    }
+    ```
 
 - 뮤직 카드: 각 음악 카드 hover 시 반투명해지며 텍스트가 나타나고 클릭 시 해당 음악 youtube 링크로 연결되는 카드를 제작했습니다.
 
