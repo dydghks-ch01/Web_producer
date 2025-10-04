@@ -19,7 +19,7 @@ nav {
 }
 ```
 
-  - menu-icon hover 시 좌측으로 이동되었던 nav를 다시 옮겨 나타나게 하고 나타난 nav hover 시에도 유지
+    - menu-icon hover 시 좌측으로 이동되었던 nav를 다시 옮겨 나타나게 하고 나타난 nav hover 시에도 유지
 
 ```
 .menu-icon:hover+nav,
