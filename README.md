@@ -55,30 +55,30 @@ Web_producer 는 웹 표준 (HTML, CSS, JavaScript)을 활용하여 음악 프�
 
    - 각 버튼 클릭에 반응하는 스크립트 작성
   
-    ```python
-    document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("modal");
-    const closeModalBtn = document.getElementById("closeModalBtn");
-    const contactForm = document.getElementById("contactForm");
-    const openModalBtn = document.getElementById("openModalBtn");
-  
-    closeModalBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-  
-    openModalBtn.addEventListener("click", () => {
-      modal.style.display = "flex";
-    });
-  
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-  
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-  
-      modal.style.display = "none";
-  
-      contactForm.reset();
-    });
-    });
-    ```
+      ```python
+      document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.getElementById("modal");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const contactForm = document.getElementById("contactForm");
+      const openModalBtn = document.getElementById("openModalBtn");
+    
+      closeModalBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+    
+      openModalBtn.addEventListener("click", () => {
+        modal.style.display = "flex";
+      });
+    
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+    
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+    
+        modal.style.display = "none";
+    
+        contactForm.reset();
+      });
+      });
+      ```
