@@ -33,46 +33,46 @@ Web_producer 는 웹 표준 (HTML, CSS, JavaScript)을 활용하여 음악 프�
 
   - 각 카드 링크 연결
   
-  ```python
-  document.getElementById('song1').addEventListener('click', () => {
-  window.open('https://www.youtube.com/watch?v=b7I2JhoUEYA', '_blank');
-  });
-  document.getElementById('song2').addEventListener('click', () => {
-    window.open('https://www.youtube.com/watch?v=JYMYbnPgiX4', '_blank');
-  });
-  document.getElementById('song3').addEventListener('click', () => {
-    window.open('https://www.youtube.com/watch?v=0vV8qugPaYw', '_blank');
-  });
-  ```
+    ```python
+    document.getElementById('song1').addEventListener('click', () => {
+    window.open('https://www.youtube.com/watch?v=b7I2JhoUEYA', '_blank');
+    });
+    document.getElementById('song2').addEventListener('click', () => {
+      window.open('https://www.youtube.com/watch?v=JYMYbnPgiX4', '_blank');
+    });
+    document.getElementById('song3').addEventListener('click', () => {
+      window.open('https://www.youtube.com/watch?v=0vV8qugPaYw', '_blank');
+    });
+    ```
 
 - 모달 팝업: contact 버튼을 배치하고 클릭하면 이메일과 문의 내용을 입력할 수 있는 모달 팝업 창을 배치했습니다.
 
   - 각 버튼 클릭에 반응하는 스크립트 작성
   
-  ```python
-  document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("modal");
-  const closeModalBtn = document.getElementById("closeModalBtn");
-  const contactForm = document.getElementById("contactForm");
-  const openModalBtn = document.getElementById("openModalBtn");
-
-  closeModalBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  openModalBtn.addEventListener("click", () => {
-    modal.style.display = "flex";
-  });
-
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    modal.style.display = "none";
-
-    contactForm.reset();
-  });
-  });
-  ```
+    ```python
+    document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+    const contactForm = document.getElementById("contactForm");
+    const openModalBtn = document.getElementById("openModalBtn");
+  
+    closeModalBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  
+    openModalBtn.addEventListener("click", () => {
+      modal.style.display = "flex";
+    });
+  
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+  
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+  
+      modal.style.display = "none";
+  
+      contactForm.reset();
+    });
+    });
+    ```
